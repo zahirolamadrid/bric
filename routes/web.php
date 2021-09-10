@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::redirect('/', '/languages');
 
 Route::resource('languages', 'LanguageController');
