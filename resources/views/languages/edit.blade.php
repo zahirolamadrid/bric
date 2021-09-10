@@ -31,7 +31,8 @@
           <label for="description">Description:</label>
           <input type="text" class="form-control" name="description" value="{{ $language->description }}"/>
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary mr-3">Update</button>
+        <a href="{{ route('languages.index') }}" class="btn btn-danger">Cancel</a>
       </form>
   </div>
 </div>

@@ -31,7 +31,8 @@
               <input type="longText" class="form-control" name="description"/>
           </div>
           
-          <button type="submit" class="btn btn-primary">Add</button>
+          <button type="submit" class="btn btn-primary mr-3">Add</button>
+          <a href="{{ route('languages.index') }}" class="btn btn-danger">Cancel</a>
       </form>
   </div>
 </div>

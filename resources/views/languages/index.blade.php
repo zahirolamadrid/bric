@@ -12,6 +12,9 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
+  <div class="mb-4">
+      <a href="{{ route('languages.create') }}" class="btn btn-primary">New language</a>
+  </div>
   <table class="table table-striped">
     <thead>
         <tr>
