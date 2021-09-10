@@ -67,7 +67,7 @@ class LanguageController extends Controller
      */
     public function edit(Language $language)
     {
-        //
+        return view('languages.edit', compact('language'));
     }
 
     /**
@@ -79,7 +79,17 @@ class LanguageController extends Controller
      */
     public function update(Request $request, Language $language)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required',
+        ]);
+    
+
+          $language->name = $validatedData['name'];
+          $language->description = $validatedData['description'];
+          $language->save();
+    
+          return redirect('/languages')->with('success', 'The language has been updated');
     }
 
     /**
