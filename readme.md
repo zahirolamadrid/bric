@@ -6,8 +6,11 @@ This Laravel 5.7 project contains a CRUD to handle the programming languages. It
     You must use Laravel 5.7
     The project is a simple CRUD app with 2 different fields
     You must use Form Requests for validations
-    The application should send an email when the CRUD record is created or updated; this has to be efficient meaning that the application has to be fast!
+    The application should send an email when the CRUD record is created or updated
     Write a console command that sends an email every hour
+
+
+
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
