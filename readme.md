@@ -1,3 +1,15 @@
+## About this project
+
+This Laravel 5.7 project contains a CRUD to handle the programming languages. It allows to store the name and a small description of the language. 
+
+    You must use Git and Github to submit the work
+    You must use Laravel 5.7
+    The project is a simple CRUD app with 2 different fields
+    You must use Form Requests for validations
+    The application should send an email when the CRUD record is created or updated; this has to be efficient meaning that the application has to be fast!
+    Write a console command that sends an email every hour
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
