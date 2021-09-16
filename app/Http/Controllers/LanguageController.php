@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Language;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\LanguageCreated;
+use App\Mail\LanguageUpdated;
 
 class LanguageController extends Controller
 {
@@ -45,6 +48,7 @@ class LanguageController extends Controller
             'name' => $validatedData['name'],
             'description' => $validatedData['description'],
         ]);
+        Mail::to("zahirolamadridalmeida@gmail.com")->send(new LanguageCreated);
         return redirect('/languages')->with('success', 'A new language has been added');
     }
 
@@ -88,7 +92,7 @@ class LanguageController extends Controller
           $language->name = $validatedData['name'];
           $language->description = $validatedData['description'];
           $language->save();
-    
+          Mail::to("zahirolamadridalmeida@gmail.com")->send(new LanguageUpdated);
           return redirect('/languages')->with('success', 'The language has been updated');
     }
 
@@ -101,7 +105,6 @@ class LanguageController extends Controller
     public function destroy(Language $language)
     {
      $language->delete();
-
      return redirect('/languages')->with('success', 'The language has been deleted successfully');
     }
 }

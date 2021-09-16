@@ -69,3 +69,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## TODOS
+
+The application should send an email when the CRUD record is created or updated; this has to be efficient meaning that the application has to be fast!
+Write a console command that sends an email every hour
